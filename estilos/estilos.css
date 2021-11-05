@@ -1,0 +1,2529 @@
+@font-face {
+    font-family: 'locanita';
+    src: url(../recursos/locanita-webfont.woff2) format('woff2'),
+         url(../recursos/locanita-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'fragmen';
+    src: url(../recursos/subway_circle_demo-webfont.woff2) format('woff2'),
+         url(../recursos/subway_circle_demo-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #d6433f;
+        }
+        header{
+            background-color: #F1F2E4;
+            color: white;
+            text-align: center;
+            position: relative;
+            display: block;
+        }
+        h1{
+            padding: 10px 30px;
+            line-height: 4rem;
+            background-image: url(../img/isologo.png);
+            background-repeat: no-repeat;
+            font-size: 0px;
+            width: 211px;
+            margin: 0 7rem;
+            height: 8rem;
+        }
+        h1 a{
+            display: block;
+            height: 8rem;
+            width: 12rem;
+            margin-left: -44px;
+        }
+        .titulos1{
+            
+font-family: 'locanita';
+            
+padding: 0px 0px;
+            
+margin-bottom: -10px;
+            
+font-size: 1.6rem;
+        }
+        #menu{top: 0;left: 0px;width: 100%;transition: all 500ms;display: flex;margin: 0;justify-content: flex-end;flex-direction: row;}
+        #burger{
+            position: absolute;
+            left: 20px;
+            top: 21px;
+            display: block;
+        }
+        #burger li{width: 2.5em;list-style: none;text-indent: -800px;overflow: hidden;margin-top: 1.45em;}
+        #burger li a{
+            display: block;
+            height: 1.5em;
+            background: url("../img/png-transparent-hamburger-button-computer-icons-marmon-keystone-canada-menu-red-sea.png") center center no-repeat;
+            background-size: cover;
+            }
+        
+        #barra{
+            
+background-color: #C4E6B1;
+            
+position: absolute;
+            
+width: 100%;
+            
+top: 8rem;
+            
+left: 0;
+            
+height: 0;
+            
+overflow: hidden;
+            
+display: block;
+            
+transition: all 500ms;
+            
+font-family: 'fragmen';
+        }
+        #principal:target #barra{
+            height: calc(57vh - 2em);
+        }
+        
+        #menu:target{
+            margin: 115px;
+            transition: all 500ms;
+            overflow: hidden;
+        }
+        #burger li:last-child{
+            display: none;
+        }
+        #principal:target #burger li:first-child{
+            display: none;
+        }
+        #principal:target #burger li:last-child{
+            display: block;
+        } 
+    
+        nav ul li{
+            width: 80%;
+            list-style: none;
+            margin: 1em auto;
+        }
+        nav ul li a{
+            display: block;
+            text-decoration: none;
+            background-color: #7ed38f;
+            padding: 1em 0;
+            color: black;
+        }
+        
+    
+    .slider{
+        width: 100%;
+        /* height: 33rem; */
+        overflow: hidden;
+        border-bottom: 3px solid #f1f2e4;
+    }
+    .slider ul{
+        display: flex;
+        animation: cambio 10s infinite linear  ;
+        width: 300%;
+    }
+    .slider li {
+        width: 100%;
+    list-style: none;
+    }
+    .slider img{
+        width: 100%;
+        height: 100%;
+    }
+    @keyframes  cambio {
+        0%{margin-left:0%;}  
+        20%{margin-left:0%;}
+    
+        25%{margin-left:-100%;}
+        45%{margin-left:-100%;}
+    
+        50%{margin-left:-200%;}
+        70%{margin-left:-200%;}
+        
+        75%{margin-left: 0%;}
+        100%{margin-left: 0%;}
+    }
+    
+    #videosalud{
+        height: 33rem;
+        width: 100%;;
+    }
+    
+    footer{
+        background-color: rgb(125 88 62);
+        padding: 10px;
+        border-top: 3px solid #f9f4f0;
+    }
+    footer p{
+        color: white;
+        padding-top: 35px;
+        padding-bottom: 5px;
+        text-align: left;
+        display: flex;
+    }
+    
+    
+    .redes{
+        display: inline-block;
+        width: 237px;
+        text-align: right;
+        vertical-align: middle;
+    }
+    
+    #textoredes{
+        width: 300px;
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 25px;
+        margin-bottom: 2rem;
+    }
+    .navegacion{
+        width: 120%;
+        margin-bottom: 5rem;
+        height: 9%;
+    }
+    .red1{
+        display: inline-block;
+        /* padding: 30px; */
+        border: rgba(68,68,68,.4);
+        /* margin: 3px; */
+        /* margin-right: 25px; */
+        background-image: url(../img/red1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .red2{
+        display: inline-block;
+        /* padding: 30px; */
+        border: rgba(68,68,68,.4);
+        /* margin: 3px; */
+        /* margin-right: 25px; */
+        background-image: url(../img/red2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+     .red3{
+        display: inline-block;
+        /* padding: 30px; */
+        border: rgba(68,68,68,.4);
+        /* margin: 3px; */
+        /* margin-right: 25px; */
+        background-image: url(../img/red3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+     
+     .navegacion li a{
+         display: block;
+         /* height: -1.5em; */
+         padding: 38px;
+     }
+    
+     aside{
+         margin: 25px 10px;
+         color: wheat;
+         padding: 5px 0px;
+     }
+     aside h2{
+        margin: 20px 10px;
+    }
+     #gracias{
+         color: white;
+         display: none;
+     }
+     #gracias:target{
+         display: block;
+         position: absolute;
+         padding: 1rem;
+         font-size: 16px;
+         background-color: black;
+         top: 10rem;
+         left: 2rem;
+         width: 16rem;
+         text-align: center;
+         border-radius: 108px;
+     }
+     #gracias a{
+         margin: 0;
+         position: absolute;
+         top: -1rem;
+         left: 14.6rem;
+         background: white;
+         border-radius: 50px;
+         padding: 11px;
+         list-style: none;
+         font-style: none;
+         text-decoration: none;
+     }
+    
+    
+     form{
+         background-color: rgb(155 155 155 / 45%);
+         color: white;
+         padding: 40px;
+         width: 100%;
+         margin-top: 30px;
+     }
+     form > div{
+         display: flex;
+     }
+     form > div :first-child{
+         flex: 0 110px;
+     }
+    
+    
+     #videosalud{
+        height: 41rem;
+        width: 100%;
+        margin-bottom: 2rem;
+        /* background-color: #f1f2e4; */
+    }
+    
+    
+    #galeria{
+        font-family: 'locanita';
+        margin-bottom: 4rem;
+    }
+    
+    #galeria h2{
+        text-align: center;
+        margin:20px 0 15px 0;
+        font-weight: 300;
+        color: white;
+        font-size: 2rem;
+    }
+    
+    .linea{
+        margin-bottom: 40px;
+    }
+    
+    .contenedor-imagenes{
+        display:flex;
+        width: 85%;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-radius: 26px;
+        background-color: #f1f2e4;
+        padding: 21px;
+    }
+    
+    .contenedor-imagenes .imagen{
+        width: 100%;
+        margin-bottom: 17px;
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+    }
+    .imagen img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        padding: 8px;
+    }
+    
+    .overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgb(241 242 228 / 57%);
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: .5s ease;
+    }
+
+    .overlay h3{
+        padding: 30px;
+    }
+    .overlay p{
+        padding: 0.4rem 2rem;
+        width: 15rem;
+    }
+    
+    .overlay h2{
+        color: #fff;
+        font-weight: 300;
+        font-size:30px;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    
+    .imagen:hover .overlay{
+        height:100%;
+        cursor: pointer;
+    }
+    
+    .receta {
+    
+margin-top: 4;
+    
+width: 100%;
+    
+max-width: 1200px;
+    
+height: 612px;
+    
+display: flex;
+    
+flex-wrap: wrap;
+    
+justify-content: center;
+    
+/* margin-top: 6rem; */
+}
+
+        .receta2 {
+    
+            width: 100%;
+            max-width: 1200px;
+            height: 430px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+            
+            }
+
+            .receta3 {
+    
+                width: 100%;
+                max-width: 1200px;
+                height: 430px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: auto;
+                
+                }
+            
+        .receta .marco1 {
+            width: 100%;
+            margin: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            background:#F1F2E4;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            transition: all 400ms ease-out;
+            cursor: default;
+            padding: 18px;
+        }
+
+        .receta .marco2 {
+            width: 100%;
+            margin: 25px;
+            border-radius: 6px;
+            overflow: hidden;
+            background:#F1F2E4;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            transition: all 400ms ease-out;
+            cursor: default;
+            padding: 1rem;
+        }
+
+        .receta .marco3 {
+            width: 100%;
+            margin: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            background:#F1F2E4;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            transition: all 400ms ease-out;
+            cursor: default;
+            padding: 1rem;
+        }
+
+        .receta .marco1 h3 {
+            margin-top: 10px;
+            font-weight: 200px;
+            font-family: 'locanita';
+            }
+
+            .receta .marco2 h3 {
+                margin-top: 10px;
+                font-weight: 200px;
+                font-family: 'locanita';
+                }
+
+                .receta .marco3 h3 {
+                    margin-top: 10px;
+                    font-weight: 200px;
+                    font-family: 'locanita';
+                    }
+        
+        .receta .marco1 img {
+            float: left;
+            margin-left: 3rem;
+            margin-top: 10px;
+            margin: auto;
+            margin-right: 10rem;
+            margin-bottom: 10px;
+            width: 200px;
+            height: 250px;
+            }
+
+            .receta .marco2 img {
+                float: left;
+                margin-left: 60px;
+                margin-top: 10px;
+                margin: auto;
+                margin-right: 8rem;
+                margin-bottom: 10px;
+                width: 200px;
+                height: 250px;
+                }
+
+        .receta .marco3 img {
+             float: left;
+             margin-left: 50px;
+             margin-top: 10px;
+             margin: auto;
+             margin-right: 8rem;
+             margin-bottom: 10px;
+             width: 200px;
+             height: 250px;
+             }
+        
+        .receta .marco1 p {
+             
+font-size: 15px;
+             
+font-weight: 300px;
+             
+margin-bottom: 10px;
+             
+font-family: 'fragmen';
+        }
+
+        .receta .marco2 p {
+             
+font-size: 15px;
+             
+font-weight: 300px;
+             
+font-family: 'fragmen';
+             
+margin-bottom: 10px;
+        }
+
+        .receta .marco3 p {
+             
+font-size: 15px;
+             
+font-weight: 300px;
+             
+margin-bottom: 10px;
+             
+font-family: 'fragmen';
+        }
+        
+        .receta .marco1:hover{
+        
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            margin-bottom: 5px;
+        
+        }
+        
+        .receta .marco2:hover{
+        
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            margin-bottom: 5px;
+        
+        }
+
+        .receta .marco3:hover{
+        
+display: inline-block;
+        
+padding: 10px;
+        
+margin-top: 10px;
+        
+text-decoration: none;
+        
+margin-bottom: 5px;
+        
+padding: 1rem;
+        }
+        .oculto1 {
+            display: none;
+            
+        }
+
+        .oculto2 {
+            display: none;
+            
+        }
+
+        .oculto3 {
+            display: none;
+            
+        }
+        .oculto4{
+            display: none;
+        }
+        #caja4:target .oculto4{
+            display: block;
+        }
+        
+        section:target .oculto1 {
+            display: block;
+        }
+        
+        section:target .oculto2 {
+            display: block;
+        }
+
+        section:target .oculto3 {
+            display: block;
+        }
+
+        section:target .mas1 {
+            display: none;
+            
+        }
+
+        section:target .mas2 {
+            display: none;
+            
+        }
+
+        section:target .mas3 {
+            display: none;
+            
+        }
+        #caja4:target .mas4{
+            display: none;
+        }
+        
+        #texto {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0rem auto;
+        padding: 3rem 2rem;
+        background: #F1F2E4;
+        margin-top: 3rem;
+        border-top: 6px solid #d7d8ca;
+        border-radius: 2rem;
+        }
+         
+        #texto img {
+        
+margin-right: 12px;
+        
+margin-bottom: 3px;
+        
+width: 15rem;
+        
+float: left;
+        
+margin-right: 30px;
+        
+/* margin-bottom: 5px; */
+        
+/* margin-bottom: 5px; */
+        
+margin-bottom: 33px;
+        }
+        
+        #texto p {
+        font-size: 17px;
+        font-weight: 200;
+        font-family: 'fragmen';
+        }
+        
+        .titulo {
+        font-size: 40px;
+        padding: 10px;
+        font-family: 'locanita';
+        margin-bottom: 10px;
+        }
+        .semanales{
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 2rem;
+            font-size: 2rem;
+            font-family: 'locanita';
+            margin-bottom: 1rem;
+        }
+        .videotitle{
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-family: 'locanita';
+        }
+        .eltexto{
+            margin-bottom: 2rem;
+        }
+        .anchho{
+            width: 20rem;
+            margin: auto;
+        }
+        .elenco{
+            color: white;
+            text-align: center;
+            margin: 2rem 0px;
+        }
+        .elenco1{
+            background-color: black;
+            padding: 2rem;
+            border-radius: 15rem;
+            text-align: center;
+            width: 15rem;
+            margin: auto;
+        }
+
+        .elenco1 a{
+            padding: 2rem;
+            /* margin: 30px; */
+            text-decoration: none;
+            color: white;
+        }
+        @media only screen and (min-width: 599px) and (max-width: 1198px){
+            #videosalud{
+                height: 27rem;
+                width: 100%;;
+            }
+            h1{
+                padding: 10px 30px;
+                line-height: 4rem;
+                background-image: url(../img/isologo.png);
+                background-repeat: no-repeat;
+                font-size: 0px;
+                width: 169px;
+                margin: 0px auto;
+                height: 8rem;
+            }
+            h1 a{
+                display: block;
+                height: 8rem;
+                width: 15rem;
+                margin-left: -44px;
+            }
+            .receta {
+    
+width: 100%;
+    
+max-width: 1200px;
+    
+height: 381px;
+    
+display: flex;
+    
+flex-wrap: wrap;
+    
+justify-content: center;
+    
+/* margin: auto; */
+    
+}
+
+                .contenedor-imagenes{
+                    display:flex;
+                    width: 29%;
+                    margin: auto;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    border-radius: 26px;
+                    background-color: #f1f2e4;
+                    padding: 14px;
+                }
+                .navegacion{
+                    width: 120%;
+                    margin-bottom: 5rem;
+                    height: 9%;
+                }
+                .anchho{
+                    width: 37rem;
+                    margin: auto;
+                }
+                #gracias{
+                    color: white;
+                    display: none;
+                }
+                #gracias:target{
+                    display: block;
+                    position: absolute;
+                    padding: 3rem;
+                    font-size: 25px;
+                    background-color: black;
+                    top: 13rem;
+                    left: 1rem;
+                    border-radius: 100px;
+                    width: 34rem;
+                    text-align: center;
+                }
+                #gracias a{
+                    margin: 0;
+                    position: absolute;
+                    top: -2rem;
+                    left: 29rem;
+                    background: white;
+                    border-radius: 50px;
+                    padding: 25px;
+                    list-style: none;
+                    font-style: none;
+                    text-decoration: none;
+                }
+                .receta .marco1 img {
+                    float: left;
+                    margin-left: 3rem;
+                    margin-top: 10px;
+                    margin: auto;
+                    margin-right: 2rem;
+                    margin-bottom: 10px;
+                    width: 200px;
+                    height: 250px;
+                    }
+        
+                    .receta .marco2 img {
+                        float: left;
+                        margin-left: 60px;
+                        margin-top: 10px;
+                        margin: auto;
+                        margin-right: 2rem;
+                        margin-bottom: 10px;
+                        width: 200px;
+                        height: 250px;
+                        }
+        
+                .receta .marco3 img {
+                     float: left;
+                     margin-left: 50px;
+                     margin-top: 10px;
+                     margin: auto;
+                     margin-right: 2rem;
+                     margin-bottom: 10px;
+                     width: 200px;
+                     height: 250px;
+                     }
+                     footer{
+                        background-color: rgb(125 88 62);
+                        padding: 10px;
+                        border-top: 3px solid #f9f4f0;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    footer p{
+                        color: white;
+                        padding-top: 35px;
+                        padding-bottom: 5px;
+                        text-align: left;
+                        display: flex;
+                    }
+                    
+                    
+                    .redes{
+                        display: inline-block;
+                        width: 237px;
+                        text-align: right;
+                        vertical-align: middle;
+                    }
+                    
+                    #textoredes{
+                        width: 300px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding-left: 25px;
+                        margin-bottom: 2rem;
+                    }
+                    .navegacion{
+                        width: 100%;
+                        margin-bottom: 5rem;
+                        height: 9%;
+                    }
+               
+        }  
+        
+        
+        @media screen and (min-width:1199px)  {
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                width: 1200px;
+                margin: auto;
+                background-color: #d6433f;
+            }
+            header{
+                background-color: #F1F2E4;
+                color: white;
+                text-align: center;
+                position: relative;
+                display: flex;
+                border-bottom: 3px solid #c7d680;
+            }
+            h1{
+                padding: 10px 30px;
+                line-height: 4rem;
+                background-image: url(../img/isologo.png);
+                background-repeat: no-repeat;
+                font-size: 0px;
+                width: 270px;
+                margin: 0 35px;
+                height: 8rem;
+            }
+            h1 a{
+                display: block;
+                height: 8rem;
+                width: 15rem;
+                margin-left: -44px;
+            }
+            h2{
+                margin: 0 20px;
+                
+                
+            }
+            section{
+                padding: 1.1em;
+                margin-bottom: 0;
+            }
+            section p{
+                font-size: 1rem;
+                line-height: 1.4rem;
+                margin: 1rem 0;
+            }
+            #barra{
+                    
+            background-color: #F1F2E4;
+                    
+            position: static;
+                    
+            display: flex;
+                    
+            width: 50%;
+                    
+            top: 0rem;
+                    
+            left: 0px;
+                    
+            height: 0;
+                    
+            overflow: visible;
+                    
+            transition: all 500ms;
+                }
+                #burger{
+                    position: absolute;
+                    left: 20px;
+                    top: -7px;
+                    display: none;
+                }
+            
+            nav ul li{
+                width: 30%;
+                list-style: none;
+                margin: 0em auto;
+            }
+            nav ul li a{
+                display: block;
+                text-decoration: none;
+                background-color: #C4E6B1;
+                border-radius: 35px;
+                padding: 0.8em 0;
+                margin: 0 5px;
+                color: black;
+            }
+            nav ul li a:hover{
+                background-color: #519b60;
+                color: black;
+            }
+            #burger li:last-child {
+             display: none;
+            }
+            
+            #menu{
+                top: 0;
+                left: 0px;
+                width: 100%;
+                transition: all 500ms;
+                display: flex;
+                margin: 40px 55px;
+                justify-content: flex-end;
+                flex-direction: row;
+                font-family: 'fragmen';
+        }
+            #burger{
+                position: absolute;
+                left: 20px;
+                top: 21px;
+                display: none;
+            }
+        
+            #videosalud{
+                height: 33rem;
+                width: 100%;;
+            }
+            #menu:target #barra {
+                height: 50px;
+            }
+            #menu:target {
+                margin: 40px;
+                transition: all 500ms;
+                overflow: hidden;
+            }
+            .slider{
+                width: 100%;
+                height: 33rem;
+                overflow: hidden;
+                border-bottom: 3px solid #f1f2e4;
+            }
+            .slider ul{
+                display: flex;
+                animation: cambio 10s infinite linear  ;
+                width: 300%;
+            }
+            .slider li {
+                width: 100%;
+            list-style: none;
+            }
+            .slider img{
+                width: 100%;
+                height: 100%;
+            }.slider{
+                width: 100%;
+                height: 33rem;
+                overflow: hidden;
+                border-bottom: 3px solid #f1f2e4;
+            }
+            .slider ul{
+                display: flex;
+                animation: cambio 10s infinite linear  ;
+                width: 300%;
+            }
+            .slider li {
+                width: 100%;
+            list-style: none;
+            }
+            .slider img{
+                width: 100%;
+                height: 100%;
+            }
+            footer{
+                background-color: rgb(125 88 62);
+                padding: 10px;
+                border-top: 3px solid #f9f4f0;
+            }
+            footer p{
+                color: white;
+                padding-top: 35px;
+                padding-bottom: 5px;
+                text-align: left;
+                display: flex;
+            }
+            .navegacion{
+                width: 112%;
+                height: 0%;
+            }
+            #textoredes{
+                width: 320px;
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 25px;
+            }
+            .redes{
+                display: inline-block;
+                width: 725px;
+                text-align: right;
+                vertical-align: middle;
+                height: 5rem;
+            }
+            .receta {
+    
+width: 100%;
+    
+max-width: 1200px;
+    
+height: 320px;
+    
+display: flex;
+    
+flex-wrap: wrap;
+    
+justify-content: center;
+    
+/* margin: auto; */
+}
+.receta2 {
+    
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    
+    }
+
+    .receta3 {
+
+        width: 100%;
+        max-width: 1200px;
+        height: 430px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        
+        }
+    
+.receta .marco1 {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background:#F1F2E4;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.receta .marco2 {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background:#F1F2E4;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.receta .marco3 {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background:#F1F2E4;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.receta .marco1 h3 {
+    margin-top: 10px;
+    font-weight: 200px;
+    }
+
+    .receta .marco2 h3 {
+        margin-top: 10px;
+        font-weight: 200px;
+        }
+
+        .receta .marco3 h3 {
+            margin-top: 10px;
+            font-weight: 200px;
+            }
+
+.receta .marco1 img {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 250px;
+
+    }
+
+    .receta .marco2 img {
+        float: left;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 200px;
+        height: 250px;
+    
+        }
+
+.receta .marco3 img {
+     float: left;
+     margin-left: 10px;
+     margin-top: 10px;
+     margin-right: 10px;
+     margin-bottom: 10px;
+     width: 200px;
+     height: 250px;
+        
+     }
+
+.receta .marco1 p {
+     
+    font-size: 15px;
+    font-weight: 300px;
+    margin-bottom: 10px;
+
+}
+
+.receta .marco2 p {
+     
+    font-size: 15px;
+    font-weight: 300px;
+    margin-bottom: 10px;
+
+}
+
+.receta .marco3 p {
+     
+    font-size: 15px;
+    font-weight: 300px;
+    margin-bottom: 10px;
+
+}
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom: 17px;
+    /* box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75) */
+}
+#texto img {
+        
+    margin-right: 12px;
+            
+    margin-bottom: 3px;
+            
+    width: 300px;
+            
+    float: left;
+            
+    margin-right: 30px;
+            
+    /* margin-bottom: 5px; */
+            
+    /* margin-bottom: 5px; */
+            
+    margin-bottom: 33px;
+            }
+            .anchho{
+                width: 73rem;
+                margin: auto;
+            }
+            #gracias{
+                color: white;
+                display: none;
+            }
+            #gracias:target{
+                display: block;
+                position: absolute;
+                padding: 4rem;
+                font-size: 25px;
+                background-color: black;
+                top: 18rem;
+                left: 20rem;
+                border-radius: 100px;
+                width: 47rem;
+                text-align: center;
+            }
+            #gracias a{
+                margin: 0;
+                position: absolute;
+                top: -2rem;
+                left: 42rem;
+                background: white;
+                border-radius: 50px;
+                padding: 25px;
+                list-style: none;
+                font-style: none;
+                text-decoration: none;
+            }
+            
+            }
+
+            @font-face {
+    font-family: 'locanita';
+    src: url(../recursos/locanita-webfont.woff2) format('woff2'),
+         url(../recursos/locanita-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'fragmen';
+    src: url(../recursos/subway_circle_demo-webfont.woff2) format('woff2'),
+         url(../recursos/subway_circle_demo-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #d6433f;
+        }
+        header{
+            background-color: #F1F2E4;
+            color: white;
+            text-align: center;
+            position: relative;
+            display: block;
+        }
+        h1{
+            padding: 10px 30px;
+            line-height: 4rem;
+            background-image: url(../img/isologo.png);
+            background-repeat: no-repeat;
+            font-size: 0px;
+            width: 211px;
+            margin: 0 7rem;
+            height: 8rem;
+        }
+        h1 a{
+            display: block;
+            height: 8rem;
+            width: 12rem;
+            margin-left: -44px;
+        }
+        .titulos1{
+            
+font-family: 'locanita';
+            
+padding: 0px 0px;
+            
+margin-bottom: -10px;
+            
+font-size: 1.6rem;
+        }
+        #menu{top: 0;left: 0px;width: 100%;transition: all 500ms;display: flex;margin: 0;justify-content: flex-end;flex-direction: row;}
+        #burger{
+            position: absolute;
+            left: 20px;
+            top: 21px;
+            display: block;
+        }
+        #burger li{width: 2.5em;list-style: none;text-indent: -800px;overflow: hidden;margin-top: 1.45em;}
+        #burger li a{
+            display: block;
+            height: 1.5em;
+            background: url("../img/png-transparent-hamburger-button-computer-icons-marmon-keystone-canada-menu-red-sea.png") center center no-repeat;
+            background-size: cover;
+            }
+        
+        #barra{
+            
+background-color: #C4E6B1;
+            
+position: absolute;
+            
+width: 100%;
+            
+top: 8rem;
+            
+left: 0;
+            
+height: 0;
+            
+overflow: hidden;
+            
+display: block;
+            
+transition: all 500ms;
+            
+font-family: 'fragmen';
+        }
+        #principal:target #barra{
+            height: calc(57vh - 2em);
+        }
+        
+        #menu:target{
+            margin: 115px;
+            transition: all 500ms;
+            overflow: hidden;
+        }
+        #burger li:last-child{
+            display: none;
+        }
+        #principal:target #burger li:first-child{
+            display: none;
+        }
+        #principal:target #burger li:last-child{
+            display: block;
+        } 
+    
+        nav ul li{
+            width: 80%;
+            list-style: none;
+            margin: 1em auto;
+        }
+        nav ul li a{
+            display: block;
+            text-decoration: none;
+            background-color: #7ed38f;
+            padding: 1em 0;
+            color: black;
+        }
+        
+    
+    .slider{
+        width: 100%;
+        /* height: 33rem; */
+        overflow: hidden;
+        border-bottom: 3px solid #f1f2e4;
+    }
+    .slider ul{
+        display: flex;
+        animation: cambio 10s infinite linear  ;
+        width: 300%;
+    }
+    .slider li {
+        width: 100%;
+    list-style: none;
+    }
+    .slider img{
+        width: 100%;
+        height: 100%;
+    }
+    @keyframes  cambio {
+        0%{margin-left:0%;}  
+        20%{margin-left:0%;}
+    
+        25%{margin-left:-100%;}
+        45%{margin-left:-100%;}
+    
+        50%{margin-left:-200%;}
+        70%{margin-left:-200%;}
+        
+        75%{margin-left: 0%;}
+        100%{margin-left: 0%;}
+    }
+    
+    #videosalud{
+        height: 33rem;
+        width: 100%;;
+    }
+    
+    footer{
+        background-color: rgb(125 88 62);
+        padding: 10px;
+        border-top: 3px solid #f9f4f0;
+    }
+    footer p{
+        color: white;
+        padding-top: 35px;
+        padding-bottom: 5px;
+        text-align: left;
+        display: flex;
+    }
+    
+    
+    .redes{
+        display: inline-block;
+        width: 237px;
+        text-align: right;
+        vertical-align: middle;
+    }
+    
+    #textoredes{
+        width: 300px;
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 25px;
+        margin-bottom: 2rem;
+    }
+    .navegacion{
+        width: 120%;
+        margin-bottom: 5rem;
+        height: 9%;
+    }
+    .red1{
+        display: inline-block;
+        /* padding: 30px; */
+        border: rgba(68,68,68,.4);
+        /* margin: 3px; */
+        /* margin-right: 25px; */
+        background-image: url(../img/red1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .red2{
+        display: inline-block;
+        /* padding: 30px; */
+        border: rgba(68,68,68,.4);
+        /* margin: 3px; */
+        /* margin-right: 25px; */
+        background-image: url(../img/red2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+     .red3{
+        display: inline-block;
+        /* padding: 30px; */
+        border: rgba(68,68,68,.4);
+        /* margin: 3px; */
+        /* margin-right: 25px; */
+        background-image: url(../img/red3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+     
+     .navegacion li a{
+         display: block;
+         /* height: -1.5em; */
+         padding: 38px;
+     }
+    
+     aside{
+         margin: 25px 10px;
+         color: wheat;
+         padding: 5px 0px;
+     }
+     aside h2{
+        margin: 20px 10px;
+    }
+     #gracias{
+         color: white;
+         display: none;
+     }
+     #gracias:target{
+         display: block;
+         position: absolute;
+         padding: 1rem;
+         font-size: 16px;
+         background-color: black;
+         top: 10rem;
+         left: 2rem;
+         width: 16rem;
+         text-align: center;
+         border-radius: 108px;
+     }
+     #gracias a{
+         margin: 0;
+         position: absolute;
+         top: -1rem;
+         left: 14.6rem;
+         background: white;
+         border-radius: 50px;
+         padding: 11px;
+         list-style: none;
+         font-style: none;
+         text-decoration: none;
+     }
+    
+    
+     form{
+         background-color: rgb(155 155 155 / 45%);
+         color: white;
+         padding: 40px;
+         width: 100%;
+         margin-top: 30px;
+     }
+     form > div{
+         display: flex;
+     }
+     form > div :first-child{
+         flex: 0 110px;
+     }
+    
+    
+     #videosalud{
+        height: 41rem;
+        width: 100%;
+        margin-bottom: 2rem;
+        /* background-color: #f1f2e4; */
+    }
+    
+    
+    #galeria{
+        font-family: 'locanita';
+        margin-bottom: 4rem;
+    }
+    
+    #galeria h2{
+        text-align: center;
+        margin:20px 0 15px 0;
+        font-weight: 300;
+        color: white;
+        font-size: 2rem;
+    }
+    
+    .linea{
+        margin-bottom: 40px;
+    }
+    
+    .contenedor-imagenes{
+        display:flex;
+        width: 85%;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-radius: 26px;
+        background-color: #f1f2e4;
+        padding: 21px;
+    }
+    
+    .contenedor-imagenes .imagen{
+        width: 100%;
+        margin-bottom: 17px;
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+    }
+    .imagen img{
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        padding: 8px;
+    }
+    
+    .overlay{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgb(241 242 228 / 57%);
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: .5s ease;
+    }
+
+    .overlay h3{
+        padding: 30px;
+    }
+    .overlay p{
+        padding: 0.4rem 2rem;
+        width: 15rem;
+    }
+    
+    .overlay h2{
+        color: #fff;
+        font-weight: 300;
+        font-size:30px;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    
+    .imagen:hover .overlay{
+        height:100%;
+        cursor: pointer;
+    }
+    
+    .receta {
+    
+margin-top: 4;
+    
+width: 100%;
+    
+max-width: 1200px;
+    
+height: 612px;
+    
+display: flex;
+    
+flex-wrap: wrap;
+    
+justify-content: center;
+    
+/* margin-top: 6rem; */
+}
+
+        .receta2 {
+    
+            width: 100%;
+            max-width: 1200px;
+            height: 430px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+            
+            }
+
+            .receta3 {
+    
+                width: 100%;
+                max-width: 1200px;
+                height: 430px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: auto;
+                
+                }
+            
+        .receta .marco1 {
+            width: 100%;
+            margin: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            background:#F1F2E4;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            transition: all 400ms ease-out;
+            cursor: default;
+            padding: 18px;
+        }
+
+        .receta .marco2 {
+            width: 100%;
+            margin: 25px;
+            border-radius: 6px;
+            overflow: hidden;
+            background:#F1F2E4;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            transition: all 400ms ease-out;
+            cursor: default;
+            padding: 1rem;
+        }
+
+        .receta .marco3 {
+            width: 100%;
+            margin: 20px;
+            border-radius: 6px;
+            overflow: hidden;
+            background:#F1F2E4;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+            transition: all 400ms ease-out;
+            cursor: default;
+            padding: 1rem;
+        }
+
+        .receta .marco1 h3 {
+            margin-top: 10px;
+            font-weight: 200px;
+            font-family: 'locanita';
+            }
+
+            .receta .marco2 h3 {
+                margin-top: 10px;
+                font-weight: 200px;
+                font-family: 'locanita';
+                }
+
+                .receta .marco3 h3 {
+                    margin-top: 10px;
+                    font-weight: 200px;
+                    font-family: 'locanita';
+                    }
+        
+        .receta .marco1 img {
+            float: left;
+            margin-left: 3rem;
+            margin-top: 10px;
+            margin: auto;
+            margin-right: 10rem;
+            margin-bottom: 10px;
+            width: 200px;
+            height: 250px;
+            }
+
+            .receta .marco2 img {
+                float: left;
+                margin-left: 60px;
+                margin-top: 10px;
+                margin: auto;
+                margin-right: 8rem;
+                margin-bottom: 10px;
+                width: 200px;
+                height: 250px;
+                }
+
+        .receta .marco3 img {
+             float: left;
+             margin-left: 50px;
+             margin-top: 10px;
+             margin: auto;
+             margin-right: 8rem;
+             margin-bottom: 10px;
+             width: 200px;
+             height: 250px;
+             }
+        
+        .receta .marco1 p {
+             
+font-size: 15px;
+             
+font-weight: 300px;
+             
+margin-bottom: 10px;
+             
+font-family: 'fragmen';
+        }
+
+        .receta .marco2 p {
+             
+font-size: 15px;
+             
+font-weight: 300px;
+             
+font-family: 'fragmen';
+             
+margin-bottom: 10px;
+        }
+
+        .receta .marco3 p {
+             
+font-size: 15px;
+             
+font-weight: 300px;
+             
+margin-bottom: 10px;
+             
+font-family: 'fragmen';
+        }
+        
+        .receta .marco1:hover{
+        
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            margin-bottom: 5px;
+        
+        }
+        
+        .receta .marco2:hover{
+        
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            margin-bottom: 5px;
+        
+        }
+
+        .receta .marco3:hover{
+        
+display: inline-block;
+        
+padding: 10px;
+        
+margin-top: 10px;
+        
+text-decoration: none;
+        
+margin-bottom: 5px;
+        
+padding: 1rem;
+        }
+        .oculto1 {
+            display: none;
+            
+        }
+
+        .oculto2 {
+            display: none;
+            
+        }
+
+        .oculto3 {
+            display: none;
+            
+        }
+        .oculto4{
+            display: none;
+        }
+        #caja4:target .oculto4{
+            display: block;
+        }
+        
+        section:target .oculto1 {
+            display: block;
+        }
+        
+        section:target .oculto2 {
+            display: block;
+        }
+
+        section:target .oculto3 {
+            display: block;
+        }
+
+        section:target .mas1 {
+            display: none;
+            
+        }
+
+        section:target .mas2 {
+            display: none;
+            
+        }
+
+        section:target .mas3 {
+            display: none;
+            
+        }
+        #caja4:target .mas4{
+            display: none;
+        }
+        
+        #texto {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0rem auto;
+        padding: 3rem 2rem;
+        background: #F1F2E4;
+        margin-top: 3rem;
+        border-top: 6px solid #d7d8ca;
+        border-radius: 2rem;
+        }
+         
+        #texto img {
+        
+margin-right: 12px;
+        
+margin-bottom: 3px;
+        
+width: 15rem;
+        
+float: left;
+        
+margin-right: 30px;
+        
+/* margin-bottom: 5px; */
+        
+/* margin-bottom: 5px; */
+        
+margin-bottom: 33px;
+        }
+        
+        #texto p {
+        font-size: 17px;
+        font-weight: 200;
+        font-family: 'fragmen';
+        }
+        
+        .titulo {
+        font-size: 40px;
+        padding: 10px;
+        font-family: 'locanita';
+        margin-bottom: 10px;
+        }
+        .semanales{
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 2rem;
+            font-size: 2rem;
+            font-family: 'locanita';
+            margin-bottom: 1rem;
+        }
+        .videotitle{
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-family: 'locanita';
+        }
+        .eltexto{
+            margin-bottom: 2rem;
+        }
+        .anchho{
+            width: 20rem;
+            margin: auto;
+        }
+        .elenco{
+            color: white;
+            text-align: center;
+            margin: 2rem 0px;
+        }
+        .elenco1{
+            background-color: black;
+            padding: 2rem;
+            border-radius: 15rem;
+            text-align: center;
+            width: 15rem;
+            margin: auto;
+        }
+
+        .elenco1 a{
+            padding: 2rem;
+            /* margin: 30px; */
+            text-decoration: none;
+            color: white;
+        }
+        @media only screen and (min-width: 599px) and (max-width: 1198px){
+            #videosalud{
+                height: 27rem;
+                width: 100%;;
+            }
+            h1{
+                padding: 10px 30px;
+                line-height: 4rem;
+                background-image: url(../img/isologo.png);
+                background-repeat: no-repeat;
+                font-size: 0px;
+                width: 169px;
+                margin: 0px auto;
+                height: 8rem;
+            }
+            h1 a{
+                display: block;
+                height: 8rem;
+                width: 15rem;
+                margin-left: -44px;
+            }
+            .receta {
+    
+width: 100%;
+    
+max-width: 1200px;
+    
+height: 381px;
+    
+display: flex;
+    
+flex-wrap: wrap;
+    
+justify-content: center;
+    
+/* margin: auto; */
+    
+}
+
+                .contenedor-imagenes{
+                    display:flex;
+                    width: 29%;
+                    margin: auto;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    border-radius: 26px;
+                    background-color: #f1f2e4;
+                    padding: 14px;
+                }
+                .navegacion{
+                    width: 120%;
+                    margin-bottom: 5rem;
+                    height: 9%;
+                }
+                .anchho{
+                    width: 37rem;
+                    margin: auto;
+                }
+                #gracias{
+                    color: white;
+                    display: none;
+                }
+                #gracias:target{
+                    display: block;
+                    position: absolute;
+                    padding: 3rem;
+                    font-size: 25px;
+                    background-color: black;
+                    top: 13rem;
+                    left: 1rem;
+                    border-radius: 100px;
+                    width: 34rem;
+                    text-align: center;
+                }
+                #gracias a{
+                    margin: 0;
+                    position: absolute;
+                    top: -2rem;
+                    left: 29rem;
+                    background: white;
+                    border-radius: 50px;
+                    padding: 25px;
+                    list-style: none;
+                    font-style: none;
+                    text-decoration: none;
+                }
+                .receta .marco1 img {
+                    float: left;
+                    margin-left: 3rem;
+                    margin-top: 10px;
+                    margin: auto;
+                    margin-right: 2rem;
+                    margin-bottom: 10px;
+                    width: 200px;
+                    height: 250px;
+                    }
+        
+                    .receta .marco2 img {
+                        float: left;
+                        margin-left: 60px;
+                        margin-top: 10px;
+                        margin: auto;
+                        margin-right: 2rem;
+                        margin-bottom: 10px;
+                        width: 200px;
+                        height: 250px;
+                        }
+        
+                .receta .marco3 img {
+                     float: left;
+                     margin-left: 50px;
+                     margin-top: 10px;
+                     margin: auto;
+                     margin-right: 2rem;
+                     margin-bottom: 10px;
+                     width: 200px;
+                     height: 250px;
+                     }
+                     footer{
+                        background-color: rgb(125 88 62);
+                        padding: 10px;
+                        border-top: 3px solid #f9f4f0;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    footer p{
+                        color: white;
+                        padding-top: 35px;
+                        padding-bottom: 5px;
+                        text-align: left;
+                        display: flex;
+                    }
+                    
+                    
+                    .redes{
+                        display: inline-block;
+                        width: 237px;
+                        text-align: right;
+                        vertical-align: middle;
+                    }
+                    
+                    #textoredes{
+                        width: 300px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding-left: 25px;
+                        margin-bottom: 2rem;
+                    }
+                    .navegacion{
+                        width: 100%;
+                        margin-bottom: 5rem;
+                        height: 9%;
+                    }
+               
+        }  
+        
+        
+        @media screen and (min-width:1199px)  {
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                width: 1200px;
+                margin: auto;
+                background-color: #d6433f;
+            }
+            header{
+                background-color: #F1F2E4;
+                color: white;
+                text-align: center;
+                position: relative;
+                display: flex;
+                border-bottom: 3px solid #c7d680;
+            }
+            h1{
+                padding: 10px 30px;
+                line-height: 4rem;
+                background-image: url(../img/isologo.png);
+                background-repeat: no-repeat;
+                font-size: 0px;
+                width: 270px;
+                margin: 0 35px;
+                height: 8rem;
+            }
+            h1 a{
+                display: block;
+                height: 8rem;
+                width: 15rem;
+                margin-left: -44px;
+            }
+            h2{
+                margin: 0 20px;
+                
+                
+            }
+            section{
+                padding: 1.1em;
+                margin-bottom: 0;
+            }
+            section p{
+                font-size: 1rem;
+                line-height: 1.4rem;
+                margin: 1rem 0;
+            }
+            #barra{
+                    
+            background-color: #F1F2E4;
+                    
+            position: static;
+                    
+            display: flex;
+                    
+            width: 50%;
+                    
+            top: 0rem;
+                    
+            left: 0px;
+                    
+            height: 0;
+                    
+            overflow: visible;
+                    
+            transition: all 500ms;
+                }
+                #burger{
+                    position: absolute;
+                    left: 20px;
+                    top: -7px;
+                    display: none;
+                }
+            
+            nav ul li{
+                width: 30%;
+                list-style: none;
+                margin: 0em auto;
+            }
+            nav ul li a{
+                display: block;
+                text-decoration: none;
+                background-color: #C4E6B1;
+                border-radius: 35px;
+                padding: 0.8em 0;
+                margin: 0 5px;
+                color: black;
+            }
+            nav ul li a:hover{
+                background-color: #519b60;
+                color: black;
+            }
+            #burger li:last-child {
+             display: none;
+            }
+            
+            #menu{
+                top: 0;
+                left: 0px;
+                width: 100%;
+                transition: all 500ms;
+                display: flex;
+                margin: 40px 55px;
+                justify-content: flex-end;
+                flex-direction: row;
+                font-family: 'fragmen';
+        }
+            #burger{
+                position: absolute;
+                left: 20px;
+                top: 21px;
+                display: none;
+            }
+        
+            #videosalud{
+                height: 33rem;
+                width: 100%;;
+            }
+            #menu:target #barra {
+                height: 50px;
+            }
+            #menu:target {
+                margin: 40px;
+                transition: all 500ms;
+                overflow: hidden;
+            }
+            .slider{
+                width: 100%;
+                height: 33rem;
+                overflow: hidden;
+                border-bottom: 3px solid #f1f2e4;
+            }
+            .slider ul{
+                display: flex;
+                animation: cambio 10s infinite linear  ;
+                width: 300%;
+            }
+            .slider li {
+                width: 100%;
+            list-style: none;
+            }
+            .slider img{
+                width: 100%;
+                height: 100%;
+            }.slider{
+                width: 100%;
+                height: 33rem;
+                overflow: hidden;
+                border-bottom: 3px solid #f1f2e4;
+            }
+            .slider ul{
+                display: flex;
+                animation: cambio 10s infinite linear  ;
+                width: 300%;
+            }
+            .slider li {
+                width: 100%;
+            list-style: none;
+            }
+            .slider img{
+                width: 100%;
+                height: 100%;
+            }
+            footer{
+                background-color: rgb(125 88 62);
+                padding: 10px;
+                border-top: 3px solid #f9f4f0;
+            }
+            footer p{
+                color: white;
+                padding-top: 35px;
+                padding-bottom: 5px;
+                text-align: left;
+                display: flex;
+            }
+            .navegacion{
+                width: 112%;
+                height: 0%;
+            }
+            #textoredes{
+                width: 320px;
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 25px;
+            }
+            .redes{
+                display: inline-block;
+                width: 725px;
+                text-align: right;
+                vertical-align: middle;
+                height: 5rem;
+            }
+            .receta {
+    
+width: 100%;
+    
+max-width: 1200px;
+    
+height: 320px;
+    
+display: flex;
+    
+flex-wrap: wrap;
+    
+justify-content: center;
+    
+/* margin: auto; */
+}
+.receta2 {
+    
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    
+    }
+
+    .receta3 {
+
+        width: 100%;
+        max-width: 1200px;
+        height: 430px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        
+        }
+    
+.receta .marco1 {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background:#F1F2E4;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.receta .marco2 {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background:#F1F2E4;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.receta .marco3 {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background:#F1F2E4;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+
+.receta .marco1 h3 {
+    margin-top: 10px;
+    font-weight: 200px;
+    }
+
+    .receta .marco2 h3 {
+        margin-top: 10px;
+        font-weight: 200px;
+        }
+
+        .receta .marco3 h3 {
+            margin-top: 10px;
+            font-weight: 200px;
+            }
+
+.receta .marco1 img {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 250px;
+
+    }
+
+    .receta .marco2 img {
+        float: left;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 200px;
+        height: 250px;
+    
+        }
+
+.receta .marco3 img {
+     float: left;
+     margin-left: 10px;
+     margin-top: 10px;
+     margin-right: 10px;
+     margin-bottom: 10px;
+     width: 200px;
+     height: 250px;
+        
+     }
+
+.receta .marco1 p {
+     
+    font-size: 15px;
+    font-weight: 300px;
+    margin-bottom: 10px;
+
+}
+
+.receta .marco2 p {
+     
+    font-size: 15px;
+    font-weight: 300px;
+    margin-bottom: 10px;
+
+}
+
+.receta .marco3 p {
+     
+    font-size: 15px;
+    font-weight: 300px;
+    margin-bottom: 10px;
+
+}
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom: 17px;
+    /* box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75) */
+}
+#texto img {
+        
+    margin-right: 12px;
+            
+    margin-bottom: 3px;
+            
+    width: 300px;
+            
+    float: left;
+            
+    margin-right: 30px;
+            
+    /* margin-bottom: 5px; */
+            
+    /* margin-bottom: 5px; */
+            
+    margin-bottom: 33px;
+            }
+            .anchho{
+                width: 73rem;
+                margin: auto;
+            }
+            #gracias{
+                color: white;
+                display: none;
+            }
+            #gracias:target{
+                display: block;
+                position: absolute;
+                padding: 4rem;
+                font-size: 25px;
+                background-color: black;
+                top: 18rem;
+                left: 20rem;
+                border-radius: 100px;
+                width: 47rem;
+                text-align: center;
+            }
+            #gracias a{
+                margin: 0;
+                position: absolute;
+                top: -2rem;
+                left: 42rem;
+                background: white;
+                border-radius: 50px;
+                padding: 25px;
+                list-style: none;
+                font-style: none;
+                text-decoration: none;
+            }
+            
+            }
+
+            
